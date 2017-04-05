@@ -13,7 +13,7 @@ import com.facebook.react.bridge.JavaScriptModule;
 public class P41SketchPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new P41SketchModule(reactContext));
+      return Collections.emptyList();
     }
 
     @Override
@@ -23,6 +23,6 @@ public class P41SketchPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-      return Collections.emptyList();
+        return Arrays.<ViewManager>asList(new P41SketchViewManager());
     }
 }
