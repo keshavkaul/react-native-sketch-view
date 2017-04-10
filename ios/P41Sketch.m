@@ -12,7 +12,8 @@ RCT_EXPORT_MODULE()
 
 -(UIView *)view
 {
-    return [[SketchViewContainer alloc] init];
+    SketchViewContainer *container = [[[NSBundle mainBundle] loadNibNamed:@"SketchViewContainer" owner:self options:nil] firstObject];
+    return container;
 }
 
 @end

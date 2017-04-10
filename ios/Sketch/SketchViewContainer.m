@@ -10,27 +10,6 @@
 
 @implementation SketchViewContainer
 
-- (instancetype)init
-{
-    self = [super init];
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    [self addSketchView:frame];
-    return self;
-}
-
--(void) addSketchView:(CGRect)frame
-{
-    if(_sketchView)
-        return;
-    _sketchView = [[SketchView alloc] initWithFrame:frame];
-    [self addSubview:_sketchView];
-}
-
 -(void)openSketchFile:(SketchFile *)file
 {
     [self.sketchView setViewImage:[UIImage imageWithContentsOfFile:file.localFilePath]];

@@ -12,7 +12,7 @@
 
 @interface SketchViewContainer : UIView
 
-@property SketchView *sketchView;
+@property (unsafe_unretained, nonatomic) IBOutlet SketchView *sketchView;
 
 -(SketchFile *)saveToLocalCache;
 -(void)openSketchFile:(SketchFile *)file;

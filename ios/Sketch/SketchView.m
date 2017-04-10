@@ -19,16 +19,9 @@
     UIImage *incrementalImage;
 }
 
-- (instancetype)init
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super init];
-    [self initialize];
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:aDecoder];
     [self initialize];
     return self;
 }

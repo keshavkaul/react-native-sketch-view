@@ -110,6 +110,7 @@
 		6B5936B71E9BC51A0075024B /* SketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchTool.m; sourceTree = "<group>"; };
 		6B5936B81E9BC51A0075024B /* ToolColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolColor.h; sourceTree = "<group>"; };
 		6B5936B91E9BC51A0075024B /* ToolThickness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolThickness.h; sourceTree = "<group>"; };
+		6B5937AC1E9BE7040075024B /* SketchViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SketchViewContainer.xib; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* P41Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P41Sketch.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* P41Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P41Sketch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +177,7 @@
 				6B5936A81E9BC5080075024B /* SketchView.m */,
 				6B5936A91E9BC5080075024B /* SketchViewContainer.h */,
 				6B5936AA1E9BC5080075024B /* SketchViewContainer.m */,
+				6B5937AC1E9BE7040075024B /* SketchViewContainer.xib */,
 				6B5936A41E9BC4E30075024B /* Tools */,
 			);
 			path = Sketch;

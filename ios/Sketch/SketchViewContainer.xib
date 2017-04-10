@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SketchViewContainer">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HE-Mi-PCs" customClass="SketchView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8HE-Mi-PCs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4m0-9W-FzJ"/>
+                <constraint firstAttribute="trailing" secondItem="8HE-Mi-PCs" secondAttribute="trailing" id="E0r-zk-WTn"/>
+                <constraint firstItem="8HE-Mi-PCs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Os0-7B-KAj"/>
+                <constraint firstAttribute="bottom" secondItem="8HE-Mi-PCs" secondAttribute="bottom" id="RB2-qe-uJ4"/>
+                <constraint firstItem="8HE-Mi-PCs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bD0-Ci-0MV"/>
+            </constraints>
+            <connections>
+                <outlet property="sketchView" destination="8HE-Mi-PCs" id="993-UP-8Iv"/>
+            </connections>
+        </view>
+    </objects>
+</document>
