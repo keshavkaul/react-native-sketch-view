@@ -1,6 +1,12 @@
 
-import { NativeModules } from 'react-native';
+import { PropTypes } from 'react';
+import { requireNativeComponent, View } from 'react-native';
 
-const { P41Sketch } = NativeModules;
+var iface = {
+  name: 'P41SketchView',
+  propTypes: {
+    ...View.propTypes // include the default view properties
+  },
+};
 
-export default P41Sketch;
+export default requireNativeComponent('P41SketchView', iface);
