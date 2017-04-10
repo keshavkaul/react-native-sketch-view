@@ -7,7 +7,7 @@ import com.sketch.SketchViewContainer;
 
 public class P41SketchViewManager extends SimpleViewManager<SketchViewContainer> {
 
-  public static final String REACT_CLASS = "P41SketchView";
+  public static final String REACT_CLASS = "P41Sketch";
 
   @Override
   public String getName() {
