@@ -7,8 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B5936AB1E9BC5080075024B /* SketchFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936A61E9BC5080075024B /* SketchFile.m */; };
+		6B5936AC1E9BC5080075024B /* SketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936A81E9BC5080075024B /* SketchView.m */; };
+		6B5936AD1E9BC5080075024B /* SketchViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936AA1E9BC5080075024B /* SketchViewContainer.m */; };
+		6B5936BA1E9BC51A0075024B /* EraserSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */; };
+		6B5936BB1E9BC51A0075024B /* Paint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B11E9BC51A0075024B /* Paint.m */; };
+		6B5936BC1E9BC51A0075024B /* PathTrackingSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */; };
+		6B5936BD1E9BC51A0075024B /* PenSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B51E9BC51A0075024B /* PenSketchTool.m */; };
+		6B5936BE1E9BC51A0075024B /* SketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B71E9BC51A0075024B /* SketchTool.m */; };
 		B3E7B58A1CC2AC0600A0062D /* P41Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* P41Sketch.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B5936441E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		6B5936461E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		6B5936481E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		6B59364A1E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		6B59364C1E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		6B59364E1E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		6B5936501E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		6B5936521E9BAF4E0075024B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -24,7 +91,25 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libP41Sketch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libP41Sketch.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B5936371E9BAE750075024B /* Sketch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sketch; sourceTree = "<group>"; };
+		6B5936391E9BAF4E0075024B /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		6B5936A51E9BC5080075024B /* SketchFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchFile.h; sourceTree = "<group>"; };
+		6B5936A61E9BC5080075024B /* SketchFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchFile.m; sourceTree = "<group>"; };
+		6B5936A71E9BC5080075024B /* SketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchView.h; sourceTree = "<group>"; };
+		6B5936A81E9BC5080075024B /* SketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchView.m; sourceTree = "<group>"; };
+		6B5936A91E9BC5080075024B /* SketchViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewContainer.h; sourceTree = "<group>"; };
+		6B5936AA1E9BC5080075024B /* SketchViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewContainer.m; sourceTree = "<group>"; };
+		6B5936AE1E9BC51A0075024B /* EraserSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserSketchTool.h; sourceTree = "<group>"; };
+		6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserSketchTool.m; sourceTree = "<group>"; };
+		6B5936B01E9BC51A0075024B /* Paint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paint.h; sourceTree = "<group>"; };
+		6B5936B11E9BC51A0075024B /* Paint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paint.m; sourceTree = "<group>"; };
+		6B5936B21E9BC51A0075024B /* PathTrackingSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathTrackingSketchTool.h; sourceTree = "<group>"; };
+		6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathTrackingSketchTool.m; sourceTree = "<group>"; };
+		6B5936B41E9BC51A0075024B /* PenSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenSketchTool.h; sourceTree = "<group>"; };
+		6B5936B51E9BC51A0075024B /* PenSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenSketchTool.m; sourceTree = "<group>"; };
+		6B5936B61E9BC51A0075024B /* SketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchTool.h; sourceTree = "<group>"; };
+		6B5936B71E9BC51A0075024B /* SketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchTool.m; sourceTree = "<group>"; };
+		6B5936B81E9BC51A0075024B /* ToolColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolColor.h; sourceTree = "<group>"; };
+		6B5936B91E9BC51A0075024B /* ToolThickness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolThickness.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* P41Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P41Sketch.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* P41Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P41Sketch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,11 +136,68 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				6B5936371E9BAE750075024B /* Sketch */,
+				6B5936A31E9BC4D00075024B /* Sketch */,
 				B3E7B5881CC2AC0600A0062D /* P41Sketch.h */,
 				B3E7B5891CC2AC0600A0062D /* P41Sketch.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				6B5936381E9BAF4E0075024B /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		6B5936381E9BAF4E0075024B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B5936391E9BAF4E0075024B /* React.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B59363A1E9BAF4E0075024B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B5936451E9BAF4E0075024B /* libReact.a */,
+				6B5936471E9BAF4E0075024B /* libReact.a */,
+				6B5936491E9BAF4E0075024B /* libyoga.a */,
+				6B59364B1E9BAF4E0075024B /* libyoga.a */,
+				6B59364D1E9BAF4E0075024B /* libcxxreact.a */,
+				6B59364F1E9BAF4E0075024B /* libcxxreact.a */,
+				6B5936511E9BAF4E0075024B /* libjschelpers.a */,
+				6B5936531E9BAF4E0075024B /* libjschelpers.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B5936A31E9BC4D00075024B /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+				6B5936A51E9BC5080075024B /* SketchFile.h */,
+				6B5936A61E9BC5080075024B /* SketchFile.m */,
+				6B5936A71E9BC5080075024B /* SketchView.h */,
+				6B5936A81E9BC5080075024B /* SketchView.m */,
+				6B5936A91E9BC5080075024B /* SketchViewContainer.h */,
+				6B5936AA1E9BC5080075024B /* SketchViewContainer.m */,
+				6B5936A41E9BC4E30075024B /* Tools */,
+			);
+			path = Sketch;
+			sourceTree = "<group>";
+		};
+		6B5936A41E9BC4E30075024B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6B5936AE1E9BC51A0075024B /* EraserSketchTool.h */,
+				6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */,
+				6B5936B01E9BC51A0075024B /* Paint.h */,
+				6B5936B11E9BC51A0075024B /* Paint.m */,
+				6B5936B21E9BC51A0075024B /* PathTrackingSketchTool.h */,
+				6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */,
+				6B5936B41E9BC51A0075024B /* PenSketchTool.h */,
+				6B5936B51E9BC51A0075024B /* PenSketchTool.m */,
+				6B5936B61E9BC51A0075024B /* SketchTool.h */,
+				6B5936B71E9BC51A0075024B /* SketchTool.m */,
+				6B5936B81E9BC51A0075024B /* ToolColor.h */,
+				6B5936B91E9BC51A0075024B /* ToolThickness.h */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +226,7 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
@@ -102,6 +244,12 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6B59363A1E9BAF4E0075024B /* Products */;
+					ProjectRef = 6B5936391E9BAF4E0075024B /* React.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* P41Sketch */,
@@ -109,12 +257,79 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6B5936451E9BAF4E0075024B /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 6B5936441E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B5936471E9BAF4E0075024B /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 6B5936461E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B5936491E9BAF4E0075024B /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 6B5936481E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B59364B1E9BAF4E0075024B /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 6B59364A1E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B59364D1E9BAF4E0075024B /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 6B59364C1E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B59364F1E9BAF4E0075024B /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 6B59364E1E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B5936511E9BAF4E0075024B /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 6B5936501E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B5936531E9BAF4E0075024B /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 6B5936521E9BAF4E0075024B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5936BB1E9BC51A0075024B /* Paint.m in Sources */,
+				6B5936AD1E9BC5080075024B /* SketchViewContainer.m in Sources */,
+				6B5936BC1E9BC51A0075024B /* PathTrackingSketchTool.m in Sources */,
+				6B5936BE1E9BC51A0075024B /* SketchTool.m in Sources */,
+				6B5936AC1E9BC5080075024B /* SketchView.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* P41Sketch.m in Sources */,
+				6B5936BD1E9BC51A0075024B /* PenSketchTool.m in Sources */,
+				6B5936BA1E9BC51A0075024B /* EraserSketchTool.m in Sources */,
+				6B5936AB1E9BC5080075024B /* SketchFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,14 +349,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -154,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -174,21 +393,24 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -198,15 +420,11 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = P41Sketch;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -214,15 +432,11 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = P41Sketch;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

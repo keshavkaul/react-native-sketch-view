@@ -1,11 +1,11 @@
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
+#if __has_include("RCTViewManager.h")
+#import "RCTViewManager.h"
 #else
-#import <React/RCTBridgeModule.h>
+#import <React/RCTViewManager.h>
 #endif
 
-@interface P41Sketch : NSObject <RCTBridgeModule>
+@interface P41Sketch : RCTViewManager
 
 @end
   
