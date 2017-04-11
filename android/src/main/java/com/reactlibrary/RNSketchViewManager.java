@@ -14,9 +14,8 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
-import com.sketch.SketchFile;
-import com.sketch.SketchViewContainer;
-import com.sketch.tools.SketchTool;
+import com.sketchView.SketchFile;
+import com.sketchView.SketchViewContainer;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -24,10 +23,12 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-public class P41SketchViewManager extends SimpleViewManager<SketchViewContainer> {
+public class RNSketchViewManager extends SimpleViewManager<SketchViewContainer> {
 
-  public static final String RN_PACKAGE = "P41Sketch";
+  private static final String RN_PACKAGE = "RNSketchView";
+
   private static final String PROPS_SELECTED_TOOL = "selectedTool";
+  private static final String PROPS_LOCAL_SOURCE_IMAGE_PATH  = "localSourceImagePath";
 
   private static final int COMMAND_CLEAR_SKETCH = 321;
   private static final int COMMAND_SAVE_SKETCH = 780;
@@ -44,8 +45,13 @@ public class P41SketchViewManager extends SimpleViewManager<SketchViewContainer>
   }
 
   @ReactProp(name = PROPS_SELECTED_TOOL)
-  public void setSelectedTool(SketchViewContainer viewContainer,@NonNull Integer toolId) {
+  public void setSelectedTool(SketchViewContainer viewContainer, @NonNull Integer toolId) {
     viewContainer.sketchView.setToolType(toolId);
+  }
+
+  @ReactProp(name = PROPS_LOCAL_SOURCE_IMAGE_PATH)
+  public void setLocalSourceImagePath(SketchViewContainer viewContainer, @NonNull String localSourceImagePath) {
+    viewContainer.openSketchFile(localSourceImagePath);
   }
 
   @Nullable

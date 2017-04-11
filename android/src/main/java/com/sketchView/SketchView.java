@@ -1,4 +1,4 @@
-package com.sketch;
+package com.sketchView;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -7,9 +7,9 @@ import android.graphics.Color;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.sketch.tools.EraseSketchTool;
-import com.sketch.tools.PenSketchTool;
-import com.sketch.tools.SketchTool;
+import com.sketchView.tools.EraseSketchTool;
+import com.sketchView.tools.PenSketchTool;
+import com.sketchView.tools.SketchTool;
 
 
 /**

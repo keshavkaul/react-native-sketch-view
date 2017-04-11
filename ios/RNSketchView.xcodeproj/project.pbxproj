@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B5936AB1E9BC5080075024B /* SketchFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936A61E9BC5080075024B /* SketchFile.m */; };
-		6B5936AC1E9BC5080075024B /* SketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936A81E9BC5080075024B /* SketchView.m */; };
-		6B5936AD1E9BC5080075024B /* SketchViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936AA1E9BC5080075024B /* SketchViewContainer.m */; };
-		6B5936BA1E9BC51A0075024B /* EraserSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */; };
-		6B5936BB1E9BC51A0075024B /* Paint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B11E9BC51A0075024B /* Paint.m */; };
-		6B5936BC1E9BC51A0075024B /* PathTrackingSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */; };
-		6B5936BD1E9BC51A0075024B /* PenSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B51E9BC51A0075024B /* PenSketchTool.m */; };
-		6B5936BE1E9BC51A0075024B /* SketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5936B71E9BC51A0075024B /* SketchTool.m */; };
-		B3E7B58A1CC2AC0600A0062D /* P41Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* P41Sketch.m */; };
+		6B37E23B1E9D4235006883C6 /* SketchFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2351E9D4235006883C6 /* SketchFile.m */; };
+		6B37E23C1E9D4235006883C6 /* SketchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2371E9D4235006883C6 /* SketchView.m */; };
+		6B37E23D1E9D4235006883C6 /* SketchViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2391E9D4235006883C6 /* SketchViewContainer.m */; };
+		6B37E24A1E9D4257006883C6 /* EraserSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E23F1E9D4256006883C6 /* EraserSketchTool.m */; };
+		6B37E24B1E9D4257006883C6 /* Paint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2411E9D4256006883C6 /* Paint.m */; };
+		6B37E24C1E9D4257006883C6 /* PathTrackingSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2431E9D4256006883C6 /* PathTrackingSketchTool.m */; };
+		6B37E24D1E9D4257006883C6 /* PenSketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2451E9D4256006883C6 /* PenSketchTool.m */; };
+		6B37E24E1E9D4257006883C6 /* SketchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B37E2471E9D4256006883C6 /* SketchTool.m */; };
+		B3E7B58A1CC2AC0600A0062D /* RNSketchViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNSketchViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,29 +90,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libP41Sketch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libP41Sketch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libRNSketchView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSketchView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B37E2341E9D4235006883C6 /* SketchFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SketchFile.h; path = SketchView/SketchFile.h; sourceTree = SOURCE_ROOT; };
+		6B37E2351E9D4235006883C6 /* SketchFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SketchFile.m; path = SketchView/SketchFile.m; sourceTree = SOURCE_ROOT; };
+		6B37E2361E9D4235006883C6 /* SketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SketchView.h; path = SketchView/SketchView.h; sourceTree = SOURCE_ROOT; };
+		6B37E2371E9D4235006883C6 /* SketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SketchView.m; path = SketchView/SketchView.m; sourceTree = SOURCE_ROOT; };
+		6B37E2381E9D4235006883C6 /* SketchViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SketchViewContainer.h; path = SketchView/SketchViewContainer.h; sourceTree = SOURCE_ROOT; };
+		6B37E2391E9D4235006883C6 /* SketchViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SketchViewContainer.m; path = SketchView/SketchViewContainer.m; sourceTree = SOURCE_ROOT; };
+		6B37E23A1E9D4235006883C6 /* SketchViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SketchViewContainer.xib; path = SketchView/SketchViewContainer.xib; sourceTree = SOURCE_ROOT; };
+		6B37E23E1E9D4256006883C6 /* EraserSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EraserSketchTool.h; path = SketchView/Tools/EraserSketchTool.h; sourceTree = SOURCE_ROOT; };
+		6B37E23F1E9D4256006883C6 /* EraserSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EraserSketchTool.m; path = SketchView/Tools/EraserSketchTool.m; sourceTree = SOURCE_ROOT; };
+		6B37E2401E9D4256006883C6 /* Paint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Paint.h; path = SketchView/Tools/Paint.h; sourceTree = SOURCE_ROOT; };
+		6B37E2411E9D4256006883C6 /* Paint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Paint.m; path = SketchView/Tools/Paint.m; sourceTree = SOURCE_ROOT; };
+		6B37E2421E9D4256006883C6 /* PathTrackingSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathTrackingSketchTool.h; path = SketchView/Tools/PathTrackingSketchTool.h; sourceTree = SOURCE_ROOT; };
+		6B37E2431E9D4256006883C6 /* PathTrackingSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PathTrackingSketchTool.m; path = SketchView/Tools/PathTrackingSketchTool.m; sourceTree = SOURCE_ROOT; };
+		6B37E2441E9D4256006883C6 /* PenSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PenSketchTool.h; path = SketchView/Tools/PenSketchTool.h; sourceTree = SOURCE_ROOT; };
+		6B37E2451E9D4256006883C6 /* PenSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PenSketchTool.m; path = SketchView/Tools/PenSketchTool.m; sourceTree = SOURCE_ROOT; };
+		6B37E2461E9D4256006883C6 /* SketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SketchTool.h; path = SketchView/Tools/SketchTool.h; sourceTree = SOURCE_ROOT; };
+		6B37E2471E9D4256006883C6 /* SketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SketchTool.m; path = SketchView/Tools/SketchTool.m; sourceTree = SOURCE_ROOT; };
+		6B37E2481E9D4256006883C6 /* ToolColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolColor.h; path = SketchView/Tools/ToolColor.h; sourceTree = SOURCE_ROOT; };
+		6B37E2491E9D4257006883C6 /* ToolThickness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolThickness.h; path = SketchView/Tools/ToolThickness.h; sourceTree = SOURCE_ROOT; };
 		6B5936391E9BAF4E0075024B /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		6B5936A51E9BC5080075024B /* SketchFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchFile.h; sourceTree = "<group>"; };
-		6B5936A61E9BC5080075024B /* SketchFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchFile.m; sourceTree = "<group>"; };
-		6B5936A71E9BC5080075024B /* SketchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchView.h; sourceTree = "<group>"; };
-		6B5936A81E9BC5080075024B /* SketchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchView.m; sourceTree = "<group>"; };
-		6B5936A91E9BC5080075024B /* SketchViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchViewContainer.h; sourceTree = "<group>"; };
-		6B5936AA1E9BC5080075024B /* SketchViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchViewContainer.m; sourceTree = "<group>"; };
-		6B5936AE1E9BC51A0075024B /* EraserSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserSketchTool.h; sourceTree = "<group>"; };
-		6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserSketchTool.m; sourceTree = "<group>"; };
-		6B5936B01E9BC51A0075024B /* Paint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paint.h; sourceTree = "<group>"; };
-		6B5936B11E9BC51A0075024B /* Paint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paint.m; sourceTree = "<group>"; };
-		6B5936B21E9BC51A0075024B /* PathTrackingSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathTrackingSketchTool.h; sourceTree = "<group>"; };
-		6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathTrackingSketchTool.m; sourceTree = "<group>"; };
-		6B5936B41E9BC51A0075024B /* PenSketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenSketchTool.h; sourceTree = "<group>"; };
-		6B5936B51E9BC51A0075024B /* PenSketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenSketchTool.m; sourceTree = "<group>"; };
-		6B5936B61E9BC51A0075024B /* SketchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchTool.h; sourceTree = "<group>"; };
-		6B5936B71E9BC51A0075024B /* SketchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchTool.m; sourceTree = "<group>"; };
-		6B5936B81E9BC51A0075024B /* ToolColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolColor.h; sourceTree = "<group>"; };
-		6B5936B91E9BC51A0075024B /* ToolThickness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolThickness.h; sourceTree = "<group>"; };
-		6B5937AC1E9BE7040075024B /* SketchViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SketchViewContainer.xib; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* P41Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P41Sketch.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* P41Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P41Sketch.m; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* RNSketchViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSketchViewManager.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNSketchViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSketchViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libP41Sketch.a */,
+				134814201AA4EA6300B7C361 /* libRNSketchView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,12 +137,31 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				6B5936A31E9BC4D00075024B /* Sketch */,
-				B3E7B5881CC2AC0600A0062D /* P41Sketch.h */,
-				B3E7B5891CC2AC0600A0062D /* P41Sketch.m */,
+				6B5936A31E9BC4D00075024B /* SketchView */,
+				B3E7B5881CC2AC0600A0062D /* RNSketchViewManager.h */,
+				B3E7B5891CC2AC0600A0062D /* RNSketchViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				6B5936381E9BAF4E0075024B /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		6B37E2331E9D41ED006883C6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6B37E23E1E9D4256006883C6 /* EraserSketchTool.h */,
+				6B37E23F1E9D4256006883C6 /* EraserSketchTool.m */,
+				6B37E2401E9D4256006883C6 /* Paint.h */,
+				6B37E2411E9D4256006883C6 /* Paint.m */,
+				6B37E2421E9D4256006883C6 /* PathTrackingSketchTool.h */,
+				6B37E2431E9D4256006883C6 /* PathTrackingSketchTool.m */,
+				6B37E2441E9D4256006883C6 /* PenSketchTool.h */,
+				6B37E2451E9D4256006883C6 /* PenSketchTool.m */,
+				6B37E2461E9D4256006883C6 /* SketchTool.h */,
+				6B37E2471E9D4256006883C6 /* SketchTool.m */,
+				6B37E2481E9D4256006883C6 /* ToolColor.h */,
+				6B37E2491E9D4257006883C6 /* ToolThickness.h */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		6B5936381E9BAF4E0075024B /* Frameworks */ = {
@@ -168,46 +187,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B5936A31E9BC4D00075024B /* Sketch */ = {
+		6B5936A31E9BC4D00075024B /* SketchView */ = {
 			isa = PBXGroup;
 			children = (
-				6B5936A51E9BC5080075024B /* SketchFile.h */,
-				6B5936A61E9BC5080075024B /* SketchFile.m */,
-				6B5936A71E9BC5080075024B /* SketchView.h */,
-				6B5936A81E9BC5080075024B /* SketchView.m */,
-				6B5936A91E9BC5080075024B /* SketchViewContainer.h */,
-				6B5936AA1E9BC5080075024B /* SketchViewContainer.m */,
-				6B5937AC1E9BE7040075024B /* SketchViewContainer.xib */,
-				6B5936A41E9BC4E30075024B /* Tools */,
+				6B37E2341E9D4235006883C6 /* SketchFile.h */,
+				6B37E2351E9D4235006883C6 /* SketchFile.m */,
+				6B37E2361E9D4235006883C6 /* SketchView.h */,
+				6B37E2371E9D4235006883C6 /* SketchView.m */,
+				6B37E2381E9D4235006883C6 /* SketchViewContainer.h */,
+				6B37E2391E9D4235006883C6 /* SketchViewContainer.m */,
+				6B37E23A1E9D4235006883C6 /* SketchViewContainer.xib */,
+				6B37E2331E9D41ED006883C6 /* Tools */,
 			);
+			name = SketchView;
 			path = Sketch;
-			sourceTree = "<group>";
-		};
-		6B5936A41E9BC4E30075024B /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				6B5936AE1E9BC51A0075024B /* EraserSketchTool.h */,
-				6B5936AF1E9BC51A0075024B /* EraserSketchTool.m */,
-				6B5936B01E9BC51A0075024B /* Paint.h */,
-				6B5936B11E9BC51A0075024B /* Paint.m */,
-				6B5936B21E9BC51A0075024B /* PathTrackingSketchTool.h */,
-				6B5936B31E9BC51A0075024B /* PathTrackingSketchTool.m */,
-				6B5936B41E9BC51A0075024B /* PenSketchTool.h */,
-				6B5936B51E9BC51A0075024B /* PenSketchTool.m */,
-				6B5936B61E9BC51A0075024B /* SketchTool.h */,
-				6B5936B71E9BC51A0075024B /* SketchTool.m */,
-				6B5936B81E9BC51A0075024B /* ToolColor.h */,
-				6B5936B91E9BC51A0075024B /* ToolThickness.h */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* P41Sketch */ = {
+		58B511DA1A9E6C8500147676 /* RNSketchView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "P41Sketch" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNSketchView" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -217,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = P41Sketch;
+			name = RNSketchView;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libP41Sketch.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNSketchView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "P41Sketch" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNSketchView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -254,7 +255,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* P41Sketch */,
+				58B511DA1A9E6C8500147676 /* RNSketchView */,
 			);
 		};
 /* End PBXProject section */
@@ -323,15 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5936BB1E9BC51A0075024B /* Paint.m in Sources */,
-				6B5936AD1E9BC5080075024B /* SketchViewContainer.m in Sources */,
-				6B5936BC1E9BC51A0075024B /* PathTrackingSketchTool.m in Sources */,
-				6B5936BE1E9BC51A0075024B /* SketchTool.m in Sources */,
-				6B5936AC1E9BC5080075024B /* SketchView.m in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* P41Sketch.m in Sources */,
-				6B5936BD1E9BC51A0075024B /* PenSketchTool.m in Sources */,
-				6B5936BA1E9BC51A0075024B /* EraserSketchTool.m in Sources */,
-				6B5936AB1E9BC5080075024B /* SketchFile.m in Sources */,
+				6B37E24B1E9D4257006883C6 /* Paint.m in Sources */,
+				6B37E23D1E9D4235006883C6 /* SketchViewContainer.m in Sources */,
+				6B37E24C1E9D4257006883C6 /* PathTrackingSketchTool.m in Sources */,
+				6B37E24E1E9D4257006883C6 /* SketchTool.m in Sources */,
+				6B37E23C1E9D4235006883C6 /* SketchView.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNSketchViewManager.m in Sources */,
+				6B37E24D1E9D4257006883C6 /* PenSketchTool.m in Sources */,
+				6B37E24A1E9D4257006883C6 /* EraserSketchTool.m in Sources */,
+				6B37E23B1E9D4235006883C6 /* SketchFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,10 +423,11 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = P41Sketch;
+				PRODUCT_NAME = RNSketchView;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SKIP_INSTALL = YES;
 			};
@@ -434,10 +436,11 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = P41Sketch;
+				PRODUCT_NAME = RNSketchView;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SKIP_INSTALL = YES;
 			};
@@ -446,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "P41Sketch" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNSketchView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -455,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "P41Sketch" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNSketchView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

@@ -10,9 +10,14 @@
 
 @implementation SketchViewContainer
 
--(void)openSketchFile:(SketchFile *)file
+-(BOOL)openSketchFile:(NSString *)localFilePath
 {
-    [self.sketchView setViewImage:[UIImage imageWithContentsOfFile:file.localFilePath]];
+    UIImage *image = [UIImage imageWithContentsOfFile:localFilePath];
+    if(image) {
+        [self.sketchView setViewImage:image];
+        return YES;
+    }
+    return NO;
 }
 
 -(SketchFile *)saveToLocalCache

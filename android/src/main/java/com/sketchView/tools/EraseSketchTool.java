@@ -1,4 +1,4 @@
-package com.sketch.tools;
+package com.sketchView.tools;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -6,7 +6,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.view.View;
 
-import com.sketch.utils.ToolUtils;
+import com.sketchView.utils.ToolUtils;
 
 /**
  * Created by keshav on 08/04/17.

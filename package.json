@@ -1,17 +1,35 @@
-
 {
-  "name": "react-native-sketch",
+  "name": "react-native-sketch-view",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic React Native touch based sketch view supporting iOS and Android",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavkaul/react-native-sketch-view.git"
+  },
   "keywords": [
-    "react-native"
+    "react",
+    "react-native",
+    "ios",
+    "android",
+    "touch",
+    "sketch",
+    "draw"
   ],
-  "author": "",
-  "license": "",
+  "author": {
+    "name": "Keshav Kaul",
+    "email": "kaul.keshav@gmail.com",
+    "url": "https://github.com/keshavkaul"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keshavkaul/react-native-sketch-view/issues"
+  },
+  "homepage": "https://github.com/keshavkaul/react-native-sketch-view#readme",
+  
   "peerDependencies": {
     "react-native": "^0.42.0"
   }

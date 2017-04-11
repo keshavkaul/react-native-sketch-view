@@ -1,8 +1,8 @@
 
-#import "P41Sketch.h"
+#import "RNSketchViewManager.h"
 
 
-@implementation P41Sketch
+@implementation RNSketchViewManager
 
 - (dispatch_queue_t)methodQueue
 {
@@ -15,7 +15,16 @@ RCT_CUSTOM_VIEW_PROPERTY(selectedTool, NSInteger, SketchViewContainer)
     [currentView.sketchView setToolType:[RCTConvert NSInteger:json]];
 }
 
-RCT_EXPORT_MODULE()
+RCT_CUSTOM_VIEW_PROPERTY(localSourceImagePath, NSString, SketchViewContainer)
+{
+    SketchViewContainer *currentView = !view ? defaultView : view;
+    NSString *localFilePath = [RCTConvert NSString:json];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [currentView openSketchFile:localFilePath];
+    });
+}
+
+RCT_EXPORT_MODULE(RNSketchView)
 
 -(UIView *)view
 {

@@ -1,4 +1,4 @@
-package com.sketch.tools;
+package com.sketchView.tools;
 
 import android.graphics.Path;
 import android.view.MotionEvent;

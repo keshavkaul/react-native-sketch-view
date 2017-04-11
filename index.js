@@ -48,14 +48,14 @@ class SketchView extends Component {
 
   render() {
     return (
-      <P41Sketch {... this.props} onChange={this.onChange}/>
+      <RNSketchView {... this.props} onChange={this.onChange}/>
     );
   }
 
   clearSketch() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this),
-      UIManager.P41Sketch.Commands.clearSketch,
+      UIManager.RNSketchView.Commands.clearSketch,
       [],
     );
   }
@@ -63,7 +63,7 @@ class SketchView extends Component {
   saveSketch() {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this),
-      UIManager.P41Sketch.Commands.saveSketch,
+      UIManager.RNSketchView.Commands.saveSketch,
       [],
     );
   }
@@ -71,7 +71,7 @@ class SketchView extends Component {
   changeTool(toolId) {
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this),
-      UIManager.P41Sketch.Commands.changeTool,
+      UIManager.RNSketchView.Commands.changeTool,
       [toolId],
     );
   }
@@ -94,9 +94,10 @@ SketchView.constants = {
 SketchView.propTypes = {
   ...View.propTypes, // include the default view properties
   selectedTool: PropTypes.number,
+  localSourceImagePath: PropTypes.string
 };
 
-let P41Sketch = requireNativeComponent('P41Sketch', SketchView, {
+let RNSketchView = requireNativeComponent('RNSketchView', SketchView, {
   nativeOnly: { onChange: true }
 });
 

@@ -7,7 +7,7 @@
 
 #import "SketchViewContainer.h"
 
-@interface P41Sketch : RCTViewManager
+@interface RNSketchViewManager : RCTViewManager
 
 @property SketchViewContainer *sketchViewContainer;
 
