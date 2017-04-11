@@ -5,7 +5,11 @@
 #import <React/RCTViewManager.h>
 #endif
 
+#import "SketchViewContainer.h"
+
 @interface P41Sketch : RCTViewManager
+
+@property SketchViewContainer *sketchViewContainer;
 
 @end
   

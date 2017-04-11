@@ -34,8 +34,8 @@ public class SketchView extends View {
         setBackgroundColor(Color.TRANSPARENT);
     }
 
-    public void setToolType(int paintType) {
-        switch (paintType) {
+    public void setToolType(int toolType) {
+        switch (toolType) {
             case SketchTool.TYPE_PEN:
                 currentTool = penTool;
                 break;

@@ -1,12 +1,103 @@
 
-import { PropTypes } from 'react';
-import { requireNativeComponent, View } from 'react-native';
+import React, { PropTypes, Component } from 'react';
+import { 
+  requireNativeComponent, 
+  View,
+  UIManager,
+  findNodeHandle,
+  DeviceEventEmitter 
+} from 'react-native';
 
-var iface = {
-  name: 'P41Sketch',
-  propTypes: {
-    ...View.propTypes // include the default view properties
-  },
+class SketchView extends Component {
+  constructor(props) {
+    super(props);
+    this.onChange = this.onChange.bind(this);
+    this.subscriptions = [];
+  }
+
+  onChange(event) {
+    console.log('save event: ',event.nativeEvent);
+    if (event.nativeEvent.type === "onSaveSketch") {
+
+      if (!this.props.onSaveSketch) {
+        return;
+      }
+
+      this.props.onSaveSketch({
+        localFilePath: event.nativeEvent.event.localFilePath,
+        imageWidth: event.nativeEvent.event.imageWidth,
+        imageHeight: event.nativeEvent.event.imageHeight
+      });
+    }
+  }
+
+  componentDidMount() {
+    if (this.props.onSaveSketch) {
+      let sub = DeviceEventEmitter.addListener(
+        'onSaveSketch',
+        this.props.onSaveSketch
+      );
+      this.subscriptions.push(sub);
+    }
+  }
+
+  componentWillUnmount() {
+    this.subscriptions.forEach(sub => sub.remove());
+    this.subscriptions = [];
+  }
+
+  render() {
+    return (
+      <P41Sketch {... this.props} onChange={this.onChange}/>
+    );
+  }
+
+  clearSketch() {
+    UIManager.dispatchViewManagerCommand(
+      findNodeHandle(this),
+      UIManager.P41Sketch.Commands.clearSketch,
+      [],
+    );
+  }
+
+  saveSketch() {
+    UIManager.dispatchViewManagerCommand(
+      findNodeHandle(this),
+      UIManager.P41Sketch.Commands.saveSketch,
+      [],
+    );
+  }
+
+  changeTool(toolId) {
+    UIManager.dispatchViewManagerCommand(
+      findNodeHandle(this),
+      UIManager.P41Sketch.Commands.changeTool,
+      [toolId],
+    );
+  }
+
+}
+
+SketchView.constants = {
+  toolType: {
+    pen: {
+      id: 0,
+      name: 'Pen',
+    },
+    eraser: {
+      id: 1,
+      name: 'Eraser'
+    }
+  }
 };
 
-export default requireNativeComponent('P41Sketch', iface);
+SketchView.propTypes = {
+  ...View.propTypes, // include the default view properties
+  selectedTool: PropTypes.number,
+};
+
+let P41Sketch = requireNativeComponent('P41Sketch', SketchView, {
+  nativeOnly: { onChange: true }
+});
+
+export default SketchView;
