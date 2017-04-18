@@ -4,7 +4,7 @@ A React Native component for touch based drawing supporting iOS and Android. Ins
 
 This component was written to fulfill the following use cases:
 1. Basic Touch based drawing for both iOS and android.
-2. Shouldn't include any UI Elements for interactaction. The UI Elements can be created and customized in react native.
+2. Shouldn't include any UI Elements for interaction. The UI Elements can be created and customized in react native.
 3. Support touch drawing, erasing of part of drawing, clearing drawing, saving of drawn images locally and opening of locally saved images.
 
 ## Getting Started
