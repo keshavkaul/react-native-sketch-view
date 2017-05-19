@@ -32,6 +32,18 @@ public class PenSketchTool extends PathTrackingSketchTool implements ToolThickne
         paint.setStrokeCap(Paint.Cap.ROUND);
     }
 
+    public PenSketchTool(View touchView, int color) {
+        super(touchView);
+
+        setToolColor(color);
+        setToolThickness(DEFAULT_THICKNESS);
+
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setAntiAlias(true);
+        paint.setStrokeJoin(Paint.Join.ROUND);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+    }
+
     @Override
     public void render(Canvas canvas) {
         canvas.drawPath(path, paint);

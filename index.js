@@ -94,6 +94,7 @@ SketchView.constants = {
 SketchView.propTypes = {
   ...View.propTypes, // include the default view properties
   selectedTool: PropTypes.number,
+  penColor: PropTypes.number,
   localSourceImagePath: PropTypes.string
 };
 
