@@ -5,7 +5,8 @@ import {
   View,
   UIManager,
   findNodeHandle,
-  DeviceEventEmitter 
+  DeviceEventEmitter,
+  ColorPropType, 
 } from 'react-native';
 
 class SketchView extends Component {
@@ -94,6 +95,7 @@ SketchView.constants = {
 SketchView.propTypes = {
   ...View.propTypes, // include the default view properties
   selectedTool: PropTypes.number,
+  toolColor: ColorPropType,
   localSourceImagePath: PropTypes.string
 };
 
