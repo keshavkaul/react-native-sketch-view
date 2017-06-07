@@ -52,13 +52,9 @@
     }
 }
 
--(void)setToolColor:(NSMutableDictionary *)rgba
+-(void)setToolColor:(UIColor *)rgba
 {
-    float r = [[rgba objectForKey:@"r"] floatValue];
-    float g = [[rgba objectForKey:@"g"] floatValue];
-    float b = [[rgba objectForKey:@"b"] floatValue];
-    float a = [[rgba objectForKey:@"a"] floatValue];
-    [(PenSketchTool *)penTool setToolColor:[UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]];
+    [(PenSketchTool *)penTool setToolColor:rgba];
 }
 
 -(void)setViewImage:(UIImage *)image
