@@ -1,6 +1,6 @@
 {
   "name": "react-native-sketch-view",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Basic React Native touch based sketch view supporting iOS and Android",
   "main": "index.js",
   "scripts": {
