@@ -103,8 +103,9 @@ export default HandNote;
 
 ### Props
 1. `selectedTool` - Set the tool id to be selected.
-2. `localSourceImagePath` - Local file path of the image.
-3. `onSaveSketch(saveArgs)` - Callback when saving is complete.
+2. `toolColor` - Set color for pen, using CSS colors.
+3. `localSourceImagePath` - Local file path of the image.
+4. `onSaveSketch(saveArgs)` - Callback when saving is complete.
 	* `saveArgs` Is an object having the following properties -
 		* `localFilePath` - Local file path of the saved image.
 		* `imageWidth` - Width of the saved image.
@@ -112,4 +113,3 @@ export default HandNote;
 
 ## License
 [MIT](./LICENSE)
-
