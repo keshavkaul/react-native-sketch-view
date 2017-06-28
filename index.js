@@ -2,7 +2,7 @@
 import React, { PropTypes, Component } from 'react';
 import {
   requireNativeComponent,
-  View,
+  ViewPropTypes,
   UIManager,
   findNodeHandle,
   DeviceEventEmitter
