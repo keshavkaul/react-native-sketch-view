@@ -1,11 +1,12 @@
 
-import React, { PropTypes, Component } from 'react';
-import { 
-  requireNativeComponent, 
-  View,
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
+import {
+  requireNativeComponent,
+  ViewPropTypes,
   UIManager,
   findNodeHandle,
-  DeviceEventEmitter 
+  DeviceEventEmitter
 } from 'react-native';
 
 class SketchView extends Component {
@@ -92,7 +93,7 @@ SketchView.constants = {
 };
 
 SketchView.propTypes = {
-  ...View.propTypes, // include the default view properties
+  ...ViewPropTypes, // include the default view properties
   selectedTool: PropTypes.number,
   localSourceImagePath: PropTypes.string
 };
