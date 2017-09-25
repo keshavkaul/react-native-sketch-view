@@ -28,6 +28,7 @@ public class RNSketchViewManager extends SimpleViewManager<SketchViewContainer> 
   private static final String RN_PACKAGE = "RNSketchView";
 
   private static final String PROPS_SELECTED_TOOL = "selectedTool";
+  private static final String PROPS_PEN_COLOR = "penColor";
   private static final String PROPS_LOCAL_SOURCE_IMAGE_PATH  = "localSourceImagePath";
 
   private static final int COMMAND_CLEAR_SKETCH = 321;
@@ -47,6 +48,11 @@ public class RNSketchViewManager extends SimpleViewManager<SketchViewContainer> 
   @ReactProp(name = PROPS_SELECTED_TOOL)
   public void setSelectedTool(SketchViewContainer viewContainer, @NonNull Integer toolId) {
     viewContainer.sketchView.setToolType(toolId);
+  }
+
+  @ReactProp(name = PROPS_PEN_COLOR)
+  public void setPenColor(SketchViewContainer viewContainer, @NonNull Integer color) {
+    viewContainer.sketchView.setPenColor(color);
   }
 
   @ReactProp(name = PROPS_LOCAL_SOURCE_IMAGE_PATH)

@@ -47,6 +47,10 @@ public class SketchView extends View {
         }
     }
 
+    public void setPenColor(int toolColor) {
+        currentTool = new PenSketchTool(this, toolColor);
+    }
+
     public void setViewImage(Bitmap bitmap) {
         incrementalImage = bitmap;
         invalidate();

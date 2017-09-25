@@ -5,7 +5,6 @@ package com.sketchView.tools;
  */
 
 public interface ToolColor {
-
     void setToolColor(int color);
     int getToolColor();
 
