@@ -1,7 +1,7 @@
 {
   "name": "react-native-sketch-view",
-  "version": "1.0.0",
-  "description": "Basic React Native touch based sketch view supporting iOS and Android",
+  "version": "1.0.1",
+  "description": "A React Native component for touch based drawing supporting iOS and Android.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
