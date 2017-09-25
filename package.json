@@ -31,6 +31,6 @@
   "homepage": "https://github.com/keshavkaul/react-native-sketch-view#readme",
   
   "peerDependencies": {
-    "react-native": "^0.42.0"
+    "react-native": ">=0.42.0"
   }
 }
