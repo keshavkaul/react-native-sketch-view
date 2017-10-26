@@ -41,7 +41,7 @@
 
 + (UIImage *) imageWithView:(UIView *)view
 {
-    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, [[UIScreen mainScreen] scale]);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
