@@ -41,11 +41,15 @@
 
 + (UIImage *) imageWithView:(UIView *)view
 {
-    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContext(view.bounds.size);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    const CGFloat mask[6] = { 222, 255, 222, 255, 222, 255 };
     UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    CGImageRef imageMask = CGImageCreateWithMaskingColors(img.CGImage, mask);
+    UIImage * maskedImage = UIGraphicsGetImageFromCurrentImageContext();
+    CGImageRelease(imageMask);
     UIGraphicsEndImageContext();
-    return img;
+    return maskedImage;
 }
 
 @end
