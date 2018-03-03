@@ -11,8 +11,9 @@ This component was written to fulfill the following use cases:
 
 1. `$ npm install react-native-sketch-view --save` or `$ yarn add react-native-sketch-view`
 2. `$ react-native link react-native-sketch-view`
-3. For iOS, open Application Project in Xcode and find `RNSketchView` project under `Libraries` Folder.
-	* Drag `SketchViewContainer.xib` into your application project, adding a folder reference instead of copying.
+3. For iOS, open your application in Xcode.
+	1. Drag `SketchViewContainer.xib` into your application project.
+	2. Click on Copy Bundle Resources and add `SketchViewContainer.xib`.
 
 ## Usage
 ```javascript
