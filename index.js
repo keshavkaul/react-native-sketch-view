@@ -5,8 +5,11 @@ import {
   View,
   UIManager,
   findNodeHandle,
-  DeviceEventEmitter 
+  DeviceEventEmitter,
+  ViewPropTypes
 } from 'react-native';
+
+const viewPropTypes = ViewPropTypes || View.propTypes;
 
 class SketchView extends Component {
   constructor(props) {
@@ -92,7 +95,7 @@ SketchView.constants = {
 };
 
 SketchView.propTypes = {
-  ...View.propTypes, // include the default view properties
+  ...viewPropTypes, // include the default view properties
   selectedTool: PropTypes.number,
   localSourceImagePath: PropTypes.string
 };
