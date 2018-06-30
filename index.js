@@ -6,7 +6,8 @@ import {
   UIManager,
   findNodeHandle,
   DeviceEventEmitter,
-  ViewPropTypes
+  ViewPropTypes,
+  ColorPropType 
 } from 'react-native';
 
 const viewPropTypes = ViewPropTypes || View.propTypes;
@@ -97,6 +98,8 @@ SketchView.constants = {
 SketchView.propTypes = {
   ...viewPropTypes, // include the default view properties
   selectedTool: PropTypes.number,
+  toolColor: ColorPropType,
+  toolThickness: PropTypes.number,
   localSourceImagePath: PropTypes.string
 };
 
