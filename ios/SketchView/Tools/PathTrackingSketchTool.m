@@ -35,7 +35,7 @@
 {
     if (!self.touchView) return;
 
-	UITouch *touch = [touches anyObject];
+    UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.touchView];
     [_path addLineToPoint:point];
     [self.touchView setNeedsDisplay];
@@ -45,7 +45,7 @@
 {
     if (!self.touchView) return;
 
-	UITouch *touch = [touches anyObject];
+    UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.touchView];
     [_path addLineToPoint:point];
     [self.touchView setNeedsDisplay];
