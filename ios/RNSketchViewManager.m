@@ -15,6 +15,12 @@ RCT_CUSTOM_VIEW_PROPERTY(selectedTool, NSInteger, SketchViewContainer)
     [currentView.sketchView setToolType:[RCTConvert NSInteger:json]];
 }
 
+RCT_CUSTOM_VIEW_PROPERTY(toolColor, UIColor, SketchViewContainer)
+{
+    SketchViewContainer *currentView = !view ? defaultView : view;
+    [currentView.sketchView setToolColor:[RCTConvert UIColor:json]];
+}
+
 RCT_CUSTOM_VIEW_PROPERTY(localSourceImagePath, NSString, SketchViewContainer)
 {
     SketchViewContainer *currentView = !view ? defaultView : view;

@@ -52,6 +52,11 @@
     }
 }
 
+-(void)setToolColor:(UIColor *)rgba
+{
+    [(PenSketchTool *)penTool setToolColor:rgba];
+}
+
 -(void)setViewImage:(UIImage *)image
 {
     incrementalImage = image;

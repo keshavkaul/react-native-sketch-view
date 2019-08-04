@@ -14,6 +14,7 @@
 
 -(void) clear;
 -(void)setToolType:(SketchToolType) toolType;
+-(void)setToolColor:(NSMutableDictionary *)rgba;
 -(void)setViewImage:(UIImage *)image;
 
 @end
