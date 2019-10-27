@@ -144,6 +144,7 @@
 				6B5936381E9BAF4E0075024B /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		6B37E2331E9D41ED006883C6 /* Tools */ = {
 			isa = PBXGroup;

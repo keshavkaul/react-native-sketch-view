@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, SketchToolType) {
 
 @interface SketchTool : NSObject
 
-@property UIView *touchView;
+@property (nonatomic, weak) UIView *touchView;
 
 -(instancetype)initWithTouchView:(UIView *) touchView;
 
