@@ -1,5 +1,5 @@
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import { 
   requireNativeComponent, 
   View,
@@ -7,6 +7,7 @@ import {
   findNodeHandle,
   DeviceEventEmitter 
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 class SketchView extends Component {
   constructor(props) {
