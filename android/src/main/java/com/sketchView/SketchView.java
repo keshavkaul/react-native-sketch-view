@@ -10,6 +10,7 @@ import android.view.View;
 import com.sketchView.tools.EraseSketchTool;
 import com.sketchView.tools.PenSketchTool;
 import com.sketchView.tools.SketchTool;
+import com.sketchView.tools.ToolThickness;
 
 
 /**
@@ -47,6 +48,15 @@ public class SketchView extends View {
         }
     }
 
+    public void setToolColor(int toolColor) {
+        ((PenSketchTool) penTool).setToolColor(toolColor);
+    }
+
+    public void setToolThickness(float toolThickness) {
+        ((ToolThickness) penTool).setToolThickness(toolThickness);
+        ((ToolThickness) eraseTool).setToolThickness(toolThickness);
+    }
+    
     public void setViewImage(Bitmap bitmap) {
         incrementalImage = bitmap;
         invalidate();

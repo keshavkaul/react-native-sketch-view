@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   P41Sketch
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/keshavkaul/react-native-sketch-view"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
