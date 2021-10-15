@@ -1,12 +1,17 @@
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { 
   requireNativeComponent, 
   View,
   UIManager,
   findNodeHandle,
-  DeviceEventEmitter 
+  DeviceEventEmitter,
+  ViewPropTypes,
+  ColorPropType 
 } from 'react-native';
+
+const viewPropTypes = ViewPropTypes || View.propTypes;
 
 class SketchView extends Component {
   constructor(props) {
@@ -92,8 +97,10 @@ SketchView.constants = {
 };
 
 SketchView.propTypes = {
-  ...View.propTypes, // include the default view properties
+  ...viewPropTypes, // include the default view properties
   selectedTool: PropTypes.number,
+  toolColor: ColorPropType,
+  toolThickness: PropTypes.number,
   localSourceImagePath: PropTypes.string
 };
 
